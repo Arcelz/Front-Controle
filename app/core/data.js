@@ -39,7 +39,6 @@ function DataService($http) {
                     return response;
                 }
                 , function errorCallback(response) {
-                    toastr.error(response.status_message);
                     return response;
                 });
     }
@@ -55,7 +54,6 @@ function DataService($http) {
                     return response;
                 }
                 , function errorCallback(response) {
-                    toastr.error(response.data.status_message);
                     return response;
                 });
     }
@@ -72,7 +70,6 @@ function DataService($http) {
                         return response;
                     }
                     , function errorCallback(response) {
-                        toastr.error(response.data.status_message);
                         return response;
                     });
         }
@@ -82,7 +79,6 @@ function DataService($http) {
                         return response;
                     }
                     , function errorCallback(response) {
-                        toastr.error(response.data.status_message);
                         return response;
                     });
         }
