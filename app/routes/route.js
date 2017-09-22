@@ -9,7 +9,7 @@ app.config(function ($httpProvider, $stateProvider, $urlRouterProvider) {
 
         //Pagina Inicial
         .state('home', {
-            url: '/home',
+            url: '/',
             templateUrl: 'app/home/home.html',
             parent: 'common',
             controller: 'Home',
@@ -71,7 +71,7 @@ app.config(function ($httpProvider, $stateProvider, $urlRouterProvider) {
             controllerAs: 'vm'
         })
 
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/');
 
 
 });

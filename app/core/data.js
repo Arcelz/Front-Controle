@@ -10,7 +10,7 @@ function DataService($http) {
         realizarDelete: realizarDelete,
         realizarPut: realizarPut
     };
-    const link = 'http://localhost:8888/API/api/';
+    const link = 'http://localhost/API/api/';
     return service;
 
     function realizarGet(caminho) {

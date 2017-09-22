@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../API/.idea/API.iml" filepath="$PROJECT_DIR$/../API/.idea/API.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Front-Controle.iml" filepath="$PROJECT_DIR$/.idea/Front-Controle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Front-Garage/.idea/arcelz.github.io.iml" filepath="$PROJECT_DIR$/../Front-Garage/.idea/arcelz.github.io.iml" />
     </modules>
   </component>
 </project>

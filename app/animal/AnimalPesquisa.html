@@ -26,11 +26,11 @@
 		<i class="fa  fa-check"></i> Os 8 animais selecionados foram excluídos com sucesso!
 	</div>
 
-	<form method="get" class="form-vertical  js-form-loading">
+	<form ng-submit="salvar()" class="form-vertical  js-form-loading">
 
 		<div class="form-group">
 			<label for="input-produto-nome">Nome</label>
-			<input id="input-produto-nome" type="text" class="form-control">
+			<input id="input-produto-nome" ng-model="form.nome" type="text" class="form-control">
 		</div>
 
 		<div class="row">
@@ -92,40 +92,37 @@
 					<th class="aw-table-checkbox">
 						<input type="checkbox">
 					</th>
+					<th>Id</th>
 					<th>Nome</th>
 					<th>Codigo da Raça</th>
 					<th >Fazenda</th>
 					<th >Lote</th>
 					<th >Peso</th>
-
+					<th class="center">Ação</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr ng-repeat="animal in animais">
 					<td class="aw-table-checkbox"><input type="checkbox"></td>
-					<td><a href="#!/animal/{{animal.idAnimal}}">{{animal.codidoBrinco}}</a></td>
-
-
-
+					<td>{{animal.idAnimal}}</td>
+					<td>{{animal.nomeAnimal}}</td>
+					<td>{{animal.codigoRaca}}</td>
+					<td>{{animal.fkFazenda}}</td>
+					<td>{{animal.fkLote}}</td>
+					<td>{{animal.fkPesagem}}</td>
 					<td class="table-pesq-produto-col-acoes">
-
 						<div class="btn-group">
-							<button class="btn  btn-default btn-xs">
+								<a href="#!/animal/{{animal.idAnimal}}">
 								<i class="fa  fa-pencil"></i>
-							</button>
+								</a>
 
-							<button class="btn  btn-default btn-xs">
+                                <a ng-click="exibirModal(animal,$index)">
 								<i class="fa  fa-trash"></i>
-							</button>
+                                </a>
 						</div>
 
 					</td>
 				</tr>
-
-
-
-
-
 			</tbody>
 		</table>
 	</div>
@@ -134,28 +131,13 @@
 		<div class="col-xs-12  col-md-8  aw-text-xs-center  aw-text-md-left">
 			<nav>
 				<ul class="pagination  pagination-sm">
-					<li><a href="#"><i class="fa  fa-angle-double-left"></i></a></li>
-					<li class="active"><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#">5</a></li>
-					<li><a href="#"><i class="fa  fa-angle-double-right"></i></a></li>
+					<li><a href=""><i class="fa  fa-angle-double-left"></i></a></li>
+					<li  ng-repeat="pagina in paginas" ><a href="" ng-click="paginar(pagina.numero)">{{pagina.numero}}</a></li>
+					<li><a href=""><i class="fa  fa-angle-double-right"></i></a></li>
 				</ul>
 			</nav>
 		</div>
-		<div class="col-xs-12  col-md-4  aw-text-xs-center  aw-text-md-right">
-			<span class="aw-pagination-info">
-				102 produtos encontrados
-			</span>
-		</div>
-
 	</div>
-</div>
-
-	</section>
-
-
 </div>
 
 <div class="aw-search-modal  js-search-modal">
@@ -170,6 +152,8 @@
 		<i class="glyphicon glyphicon-remove  js-search-modal-close"></i>
 	</div>
 </div>
+
+<div data-ng-include="'app/modal/modal-excluir.html'"></div>
 
 <script src="assets/javascripts/vendors.min.js"></script>
 
