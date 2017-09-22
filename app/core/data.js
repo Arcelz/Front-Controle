@@ -3,7 +3,7 @@ angular
     .factory('DataService', DataService);
 
 /* @ngInject */
-function DataService($http) {
+function DataService($http, toastr) {
     var service = {
         realizarGet: realizarGet,
         realizarPost: realizarPost,
@@ -21,9 +21,19 @@ function DataService($http) {
         };
         return $http.get(link + caminho, config)
             .then(function successCallback(response) {
+                    if (response.data.codigo === 400) {
+                        toastr.error(response.data.mensagem);
+                    }
+                    else if (response.data.codigo === 401) {
+                        var msg = response.data.mensagem.split(",");
+                        for (var i = 0; i < msg.length; i++) {
+                            toastr.error(msg[i]);
+                        }
+                    }
                     return response;
                 }
                 , function errorCallback(response) {
+                    toastr.error(response.data.mensagem);
                     return response;
                 });
     }
@@ -36,9 +46,22 @@ function DataService($http) {
         };
         return $http.post(link + caminho, data, config)
             .then(function successCallback(response) {
+                    if (response.data.codigo === 200) {
+                        toastr.success(response.data.mensagem);
+                    }
+                    else if (response.data.codigo === 400) {
+                        toastr.error(response.data.mensagem);
+                    }
+                    else if (response.data.codigo === 401) {
+                        var msg = response.data.mensagem.split(",");
+                        for (var i = 0; i < msg.length; i++) {
+                            toastr.error(msg[i]);
+                        }
+                    }
                     return response;
                 }
                 , function errorCallback(response) {
+                    toastr.error(response.data.mensagem);
                     return response;
                 });
     }
@@ -51,9 +74,22 @@ function DataService($http) {
         };
         return $http.delete(link + caminho, config)
             .then(function successCallback(response) {
+                    if (response.data.codigo === 200) {
+                        toastr.success(response.data.mensagem);
+                    }
+                    else if (response.data.codigo === 400) {
+                        toastr.error(response.data.mensagem);
+                    }
+                    else if (response.data.codigo === 401) {
+                        var msg = response.data.mensagem.split(",");
+                        for (var i = 0; i < msg.length; i++) {
+                            toastr.error(msg[i]);
+                        }
+                    }
                     return response;
                 }
                 , function errorCallback(response) {
+                    toastr.error(response.data.mensagem);
                     return response;
                 });
     }
@@ -67,18 +103,44 @@ function DataService($http) {
         if (data !== undefined) {
             return $http.put(link + caminho, data, config)
                 .then(function successCallback(response) {
+                        if (response.data.codigo === 200) {
+                            toastr.success(response.data.mensagem);
+                        }
+                        else if (response.data.codigo === 400) {
+                            toastr.error(response.data.mensagem);
+                        }
+                        else if (response.data.codigo === 401) {
+                            var msg = response.data.mensagem.split(",");
+                            for (var i = 0; i < msg.length; i++) {
+                                toastr.error(msg[i]);
+                            }
+                        }
                         return response;
                     }
                     , function errorCallback(response) {
+                        toastr.error(response.data.mensagem);
                         return response;
                     });
         }
         else {
             return $http.put(link + caminho, data, config)
                 .then(function successCallback(response) {
+                        if (response.data.codigo === 200) {
+                            toastr.success(response.data.mensagem);
+                        }
+                        else if (response.data.codigo === 400) {
+                            toastr.error(response.data.mensagem);
+                        }
+                        else if (response.data.codigo === 401) {
+                            var msg = response.data.mensagem.split(",");
+                            for (var i = 0; i < msg.length; i++) {
+                                toastr.error(msg[i]);
+                            }
+                        }
                         return response;
                     }
                     , function errorCallback(response) {
+                        toastr.error(response.data.mensagem);
                         return response;
                     });
         }
