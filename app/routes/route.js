@@ -71,6 +71,33 @@ app.config(function ($httpProvider, $stateProvider, $urlRouterProvider) {
             controllerAs: 'vm'
         })
 
+        //Pai
+        .state('paiNovo', {
+            url: '/pai/novo',
+            templateUrl: 'app/pai/pai.html',
+            parent: 'common',
+            controller: 'paiNovo',
+            controllerAs: 'vm'
+        })
+
+        //Mae
+        .state('maeNovo', {
+            url: '/mae/novo',
+            templateUrl: 'app/mae/mae.html',
+            parent: 'common',
+            controller: 'maeNovo',
+            controllerAs: 'vm'
+        })
+
+        //Pesagem
+        .state('pesagemNovo', {
+            url: '/pesagem/novo',
+            templateUrl: 'app/pesagem/pesagem.html',
+            parent: 'common',
+            controller: 'pesagemNovo',
+            controllerAs: 'vm'
+        })
+
     $urlRouterProvider.otherwise('/');
 
 
