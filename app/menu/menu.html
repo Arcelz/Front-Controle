@@ -67,7 +67,7 @@
                 <ul class="aw-menu__list">
 
                     <li class="aw-menu__item">
-                        <a onclick="carregar('http://localhost/Sistema-bovino/dist/dist/menu-principal.html')"><i class="fa  fa-fw  fa-home" href="#"></i><span>Menu Principal</span></a>
+                        <a ><i class="fa  fa-fw  fa-home" ui-sref="home"></i>Menu Principal</a>
                     </li>
 
                     <li class="aw-menu__item">
@@ -77,9 +77,8 @@
                         </a>
 
                         <ul class="aw-menu__list  aw-menu__list--sublist">
-                            <li class="aw-menu__item  aw-menu__item--link"><a >Cadastro de fazenda</a></li>
-                            <li class="aw-menu__item  aw-menu__item--link"><a >Pesquisa de fazendas</a></li>
-                            <li class="aw-menu__item  aw-menu__item--link"><a >Tabela sem dados</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="fazendaNovo" >Cadastro de fazenda</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="fazendaListar">Pesquisa de fazendas</a></li>
                         </ul>
                     </li>
 
@@ -91,7 +90,45 @@
 
                         <ul class="aw-menu__list  aw-menu__list--sublist">
                             <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="animalNovo">Cadastro de animais</a></li>
-                            <li class="aw-menu__item  aw-menu__item--link  "><a>Pesquisa de animais</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="animalListar">Pesquisa de animais</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="">Cadastro de mães</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="">Cadastro de pais</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="aw-menu__item">
+                        <a href="#">
+                            <i class="fa  fa-fw  fa-file-text"></i><span>Ciclo de vida</span>
+                            <i class="aw-menu__navigation-icon  fa"></i>
+                        </a>
+
+                        <ul class="aw-menu__list  aw-menu__list--sublist">
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="cicloVidaNovo" >Cadastro de ciclos</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="">Pesquisa de ciclos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="aw-menu__item">
+                        <a href="#">
+                            <i class="fa  fa-fw  fa-file-text"></i><span>Lote</span>
+                            <i class="aw-menu__navigation-icon  fa"></i>
+                        </a>
+
+                        <ul class="aw-menu__list  aw-menu__list--sublist">
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="" >Cadastro de lotes</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="">Pesquisa de lotes</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="aw-menu__item">
+                        <a href="#">
+                            <i class="fa  fa-fw  fa-file-text"></i><span>Pesagem</span>
+                            <i class="aw-menu__navigation-icon  fa"></i>
+                        </a>
+
+                        <ul class="aw-menu__list  aw-menu__list--sublist">
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="" >Cadastro de pesos</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link"><a ui-sref="">Pesquisa de pesos</a></li>
                         </ul>
                     </li>
 
@@ -115,8 +152,8 @@
                         </a>
 
                         <ul class="aw-menu__list  aw-menu__list--sublist">
-                            <li class="aw-menu__item  aw-menu__item--link"><a onclick="carregar('http://localhost/Sistema-bovino/dist/dist/cadastro-funcionarios.html')" >Cadastro de funcionários</a></li>
-                            <li class="aw-menu__item  aw-menu__item--link  "><a onclick="carregar('http://localhost/Sistema-bovino/dist/dist/pesquisa-medicamentos.html')">Pesquisa de funcionários</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link"><a  >Cadastro de funcionários</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link  "><a >Pesquisa de funcionários</a></li>
 
                         </ul>
                     </li>
@@ -127,8 +164,8 @@
                         </a>
 
                         <ul class="aw-menu__list  aw-menu__list--sublist">
-                            <li class="aw-menu__item  aw-menu__item--link"><a onclick="carregar('')" >PPT</a></li>
-                            <li class="aw-menu__item  aw-menu__item--link "><a onclick="carregar('')">Hematócrito</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link"><a  >PPT</a></li>
+                            <li class="aw-menu__item  aw-menu__item--link "><a >Hematócrito</a></li>
 
                         </ul>
                     </li>
