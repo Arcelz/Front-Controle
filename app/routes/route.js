@@ -44,30 +44,44 @@ app.config(function ($httpProvider, $stateProvider, $urlRouterProvider) {
             url: '/fazenda/novo',
             templateUrl: 'app/fazenda/fazenda.html',
             parent: 'common',
-            controller: 'FazendaNovo.js',
+            controller: 'FazendaNovo',
             controllerAs: 'vm'
         })
         .state('fazendaEditar', {
             url: '/fazenda/:id',
             templateUrl: 'app/fazenda/fazenda.html',
             parent: 'common',
-            controller: 'AnimalEditar',
+            controller: 'FazendaEditar',
             controllerAs: 'vm'
         })
         .state('fazendaListar', {
             url: '/fazenda',
-            templateUrl: 'app/fazenda/fazendaPesquisa.html',
+            templateUrl: 'app/fazenda/FazendaPesquisa.html',
             parent: 'common',
-            controller: 'fazendaListar',
+            controller: 'FazendaListar',
             controllerAs: 'vm'
         })
 
         //Ciclos de Vida
         .state('cicloVidaNovo', {
             url: '/cicloVida/novo',
-            templateUrl: 'app/cicloVida/cicloVida.html',
+            templateUrl: 'app/cicloVida/CicloVida.html',
             parent: 'common',
-            controller: 'cicloVidaNovo',
+            controller: 'CicloVidaNovo',
+            controllerAs: 'vm'
+        })
+        .state('cicloVidaListar', {
+            url: '/cicloVida',
+            templateUrl: 'app/cicloVida/CicloVidaPesquisa.html',
+            parent: 'common',
+            controller: 'CicloVidaListar',
+            controllerAs: 'vm'
+        })
+        .state('cicloVidaEditar', {
+            url: '/cicloVida',
+            templateUrl: 'app/cicloVida/CicloVida.html',
+            parent: 'common',
+            controller: 'CicloVidaEditar',
             controllerAs: 'vm'
         })
 
@@ -76,7 +90,7 @@ app.config(function ($httpProvider, $stateProvider, $urlRouterProvider) {
             url: '/pai/novo',
             templateUrl: 'app/pai/pai.html',
             parent: 'common',
-            controller: 'paiNovo',
+            controller: 'PaiNovo',
             controllerAs: 'vm'
         })
 
@@ -85,7 +99,7 @@ app.config(function ($httpProvider, $stateProvider, $urlRouterProvider) {
             url: '/mae/novo',
             templateUrl: 'app/mae/mae.html',
             parent: 'common',
-            controller: 'maeNovo',
+            controller: 'MaeNovo',
             controllerAs: 'vm'
         })
 

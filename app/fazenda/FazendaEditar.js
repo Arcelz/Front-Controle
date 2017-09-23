@@ -9,7 +9,7 @@ app.controller('FazendaEditar', function ($scope, $stateParams, DataService) {
         $scope.form = data.data.mensagem[0];
     });
     $scope.salvar = function () {
-        if ($scope.formulario.$valid) {
+        if ($scope.formularioFazenda.$valid) {
             DataService.realizarPut('fazenda/idFazenda/' + id, $scope.form).then(function (data) {
                 console.log(data);
             });
