@@ -88,18 +88,46 @@ app.config(function ($httpProvider, $stateProvider, $urlRouterProvider) {
         //Pai
         .state('paiNovo', {
             url: '/pai/novo',
-            templateUrl: 'app/pai/pai.html',
+            templateUrl: 'app/pai/Pai.html',
             parent: 'common',
             controller: 'PaiNovo',
+            controllerAs: 'vm'
+        })
+        .state('paiListar', {
+            url: '/pai/',
+            templateUrl: 'app/pai/PaiPesquisa.html',
+            parent: 'common',
+            controller: 'PaiListar',
+            controllerAs: 'vm'
+        })
+        .state('paiEditar', {
+            url: '/pai/novo',
+            templateUrl: 'app/pai/Pai.html',
+            parent: 'common',
+            controller: 'PaiEditar',
             controllerAs: 'vm'
         })
 
         //Mae
         .state('maeNovo', {
             url: '/mae/novo',
-            templateUrl: 'app/mae/mae.html',
+            templateUrl: 'app/mae/Mae.html',
             parent: 'common',
             controller: 'MaeNovo',
+            controllerAs: 'vm'
+        })
+        .state('maeListar', {
+            url: '/mae/',
+            templateUrl: 'app/mae/MaePesquisa.html',
+            parent: 'common',
+            controller: 'MaeListar',
+            controllerAs: 'vm'
+        })
+        .state('maeEditar', {
+            url: '/pai/novo',
+            templateUrl: 'app/mae/mae.html',
+            parent: 'common',
+            controller: 'MaeEditar',
             controllerAs: 'vm'
         })
 
@@ -108,7 +136,7 @@ app.config(function ($httpProvider, $stateProvider, $urlRouterProvider) {
             url: '/pesagem/novo',
             templateUrl: 'app/pesagem/pesagem.html',
             parent: 'common',
-            controller: 'pesagemNovo',
+            controller: 'PesagemNovo',
             controllerAs: 'vm'
         })
 
