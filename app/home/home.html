@@ -27,7 +27,7 @@
 </div>
 
 <div class="container-fluid">
-<!--
+
   <div class="row">
     <div class="col-sm-4">
 
@@ -59,13 +59,13 @@
         <div class="aw-box__icon">
           <i class="fa  fa-heartbeat  fa-3x"></i>
         </div>
-        <div class="aw-box__value">R$40.233,40</div>
-        <div class="aw-box__title">Faturamento no mês</div>
+        <div class="aw-box__value">5</div>
+        <div class="aw-box__title">Animais doentes</div>
       </div>
 
     </div>
   </div>
--->
+
   <div class="row">
     <div class="col-sm-4">
 
@@ -83,7 +83,7 @@
 
       <div class="aw-box">
         <div class="aw-box__icon">
-          <i class="fa  fa-battery-empty  fa-3x"></i>
+          <i class="fa  fa-balance-scale fa-3x"></i>
         </div>
         <div class="aw-box__value">100</div>
         <div class="aw-box__title">Medicamentos sem estoque</div>
@@ -95,7 +95,7 @@
 
       <div class="aw-box">
         <div class="aw-box__icon">
-          <i class="fa  fa-truck  fa-3x"></i>
+          <i class="fa  fa-check  fa-3x"></i>
         </div>
         <div class="aw-box__value">344</div>
         <div class="aw-box__title">Estoque total</div>
@@ -112,12 +112,10 @@
         </div>
         <div class="aw-graph-box__content">
           <div class="aw-graph-box__no-data">
-              <i class="fa  fa-line-chart  fa-2x"></i>
-              <span>Não há dados</span>
           </div>
 
           <div>
-            <canvas id="lineChart" height="160"></canvas>
+            <canvas id="doencasPorMes" height="160"></canvas>
           </div>
         </div>
       </div>
@@ -126,21 +124,21 @@
     <div class="col-sm-6">
       <div class="aw-graph-box">
         <div class="aw-graph-box__header">
-          <h2 class="aw-graph-box__title">Resultados de testes de PPT <small>últimos 12 meses</small></h2>
+          <h2 class="aw-graph-box__title">Nascimentos <small>últimos 12 meses</small></h2>
         </div>
         <div class="aw-graph-box__content" style="position: relative">
           <div class="aw-graph-box__no-data">
-              <i class="fa  fa-line-chart  fa-2x"></i>
-              <span>Não há dados</span>
+
           </div>
 
           <div>
-            <canvas id="lineChart" height="160"></canvas>
+            <canvas id="nascimentos" height="160"></canvas>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 </div>
 
 </body>

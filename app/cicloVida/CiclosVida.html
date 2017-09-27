@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-xs-10">
                 <h1>
-                    Pesagem
+                    Hematócrito
                 </h1>
             </div>
 
@@ -50,6 +50,7 @@
                 <th >Fazenda</th>
                 <th >Lote</th>
                 <th >Peso</th>
+                <th>Hematócrito</th>
                 <th>Ação</th>
             </tr>
             </thead>
@@ -60,12 +61,8 @@
                 <td>{{animal.codigoRaca}}</td>
                 <td>{{animal.nomeFazenda}}</td>
                 <td>{{animal.codigoLote}}</td>
-                <td>
-                    <div class="col-sm-12">
-                        <input id="peso" ng-model="form.peso" type="text" class="form-control">
-
-                    </div>
-                </td>
+                <td>{{animal.peso}}</td>
+                <td><input type="text"/></td>
 
                 <td class="table-pesq-produto-col-acoes">
                     <div class="btn-group">

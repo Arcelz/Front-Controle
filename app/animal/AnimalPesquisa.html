@@ -50,7 +50,7 @@
 					<th >Fazenda</th>
 					<th >Lote</th>
 					<th >Peso</th>
-					<th class="center">Ação</th>
+					<th >Ação</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -64,11 +64,12 @@
 					<td class="table-pesq-produto-col-acoes">
 						<div class="btn-group">
 
-								<a class="btn  btn-default btn-xs" href="#!/animal/{{animal.idAnimal}}">
-								<i class="fa  fa-pencil"></i>
-								</a>
+							<a class="btn  btn-default btn-xs" href="#!/animal/{{animal.idAnimal}}">
+								<i ui-sref="animalNovo" class="fa  fa-pencil"></i>
+							</a>
 
-                                <a class="btn  btn-default btn-xs" ng-click="exibirModal(animal,$index)">
+
+							<a class="btn  btn-default btn-xs" ng-click="exibirModal(animal,$index)">
 								<i class="fa  fa-trash"></i>
                                 </a>
 						</div>

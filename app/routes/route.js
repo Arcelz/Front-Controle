@@ -65,9 +65,9 @@ app.config(function ($httpProvider, $stateProvider, $urlRouterProvider) {
         //Ciclos de Vida
         .state('cicloVidaNovo', {
             url: '/cicloVida/novo',
-            templateUrl: 'app/cicloVida/CicloVida.html',
+            templateUrl: 'app/cicloVida/CiclosVida.html',
             parent: 'common',
-            controller: 'CicloVidaNovo',
+            controller: 'AnimalListar',
             controllerAs: 'vm'
         })
         .state('cicloVidaListar', {
@@ -79,7 +79,7 @@ app.config(function ($httpProvider, $stateProvider, $urlRouterProvider) {
         })
         .state('cicloVidaEditar', {
             url: '/cicloVida',
-            templateUrl: 'app/cicloVida/CicloVida.html',
+            templateUrl: 'app/cicloVida/CiclosVida.html',
             parent: 'common',
             controller: 'CicloVidaEditar',
             controllerAs: 'vm'
@@ -124,7 +124,7 @@ app.config(function ($httpProvider, $stateProvider, $urlRouterProvider) {
             controllerAs: 'vm'
         })
         .state('maeEditar', {
-            url: '/pai/novo',
+            url: '/mae/novo',
             templateUrl: 'app/mae/mae.html',
             parent: 'common',
             controller: 'MaeEditar',
@@ -136,7 +136,16 @@ app.config(function ($httpProvider, $stateProvider, $urlRouterProvider) {
             url: '/pesagem/novo',
             templateUrl: 'app/pesagem/pesagem.html',
             parent: 'common',
-            controller: 'PesagemNovo',
+            controller: 'AnimalListar',
+            controllerAs: 'vm'
+        })
+
+        //Hematócrito
+        .state('hematocritoNovo', {
+            url: '/hematocrito/novo',
+            templateUrl: 'app/hematocrito/hematocrito.html',
+            parent: 'common',
+            controller: 'AnimalListar',
             controllerAs: 'vm'
         })
 

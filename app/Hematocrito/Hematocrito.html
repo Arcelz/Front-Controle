@@ -1,10 +1,13 @@
+<style>
+
+</style>
 
 <div class="page-header">
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-10">
                 <h1>
-                    Pesagem
+                    Hematócrito
                 </h1>
             </div>
 
@@ -40,7 +43,7 @@
 
     </form>
 
-    <div class="table-responsive">
+    <div class=" table-responsive ">
         <table id="tabela-produtos" class="table  table-striped  table-bordered  table-hover  table-condensed  js-sticky-table">
             <thead class="aw-table-header-solid">
             <tr>
@@ -50,6 +53,7 @@
                 <th >Fazenda</th>
                 <th >Lote</th>
                 <th >Peso</th>
+                <th>Hematócrito</th>
                 <th>Ação</th>
             </tr>
             </thead>
@@ -60,9 +64,10 @@
                 <td>{{animal.codigoRaca}}</td>
                 <td>{{animal.nomeFazenda}}</td>
                 <td>{{animal.codigoLote}}</td>
+                <td>{{animal.peso}}</td>
                 <td>
                     <div class="col-sm-12">
-                        <input id="peso" ng-model="form.peso" type="text" class="form-control">
+                        <input id="hematocrito" ng-model="form.hematocrito" type="text" class="form-control">
 
                     </div>
                 </td>

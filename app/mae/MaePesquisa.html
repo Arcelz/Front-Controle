@@ -4,14 +4,14 @@
 		<div class="row">
 			<div class="col-xs-10">
 				<h1>
-					Pesquisa de Fazendas
+					Pesquisa de mães
 				</h1>
 			</div>
 
 			<div class="col-xs-2">
 				<div class="aw-page-header-controls">
 					<a class="btn btn-primary">
-						<i class="fa  fa-plus-circle"></i> <span ui-sref="fazendaNovo" class="hidden-xs  hidden-sm">Nova Fazenda</span>
+						<i class="fa  fa-plus-circle"></i> <span ui-sref="maeNovo" class="hidden-xs  hidden-sm">Nova Mãe</span>
 					</a>
 				</div>
 			</div>
@@ -26,8 +26,8 @@
 	<form ng-submit="salvar()" class="form-vertical  js-form-loading" >
 
 		<div class="form-group">
-			<label for="input-produto-nome">Nome</label>
-			<input id="input-produto-nome" type="text" class="form-control">
+			<label for="nome">Nome</label>
+			<input id="nome" type="text" class="form-control">
 		</div>
 
 		<div class="row">
@@ -58,9 +58,9 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="fazenda in fazendas">
+				<tr ng-repeat="mae in maes">
 					<td class="aw-table-checkbox"><input type="checkbox"></td>
-					<td><a href="#!/fazenda/{{fazenda.idFazenda}}">{{fazenda.nomeFazenda}}</a></td>
+					<td><a href="#!/mae/{{mae.idMae}}">{{mae.nomeMae}}</a></td>
 
 
 

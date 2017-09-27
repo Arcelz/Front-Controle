@@ -73,7 +73,7 @@ app.controller('FazendaListar', function ($scope, $rootScope, DataService) {
         });
     }
     DataService.realizarGet('fazenda').then(function (data) {
-        $scope.animais = data.data.mensagem;
+        $scope.fazendas = data.data.mensagem;
     });
     $scope.exibirModal = function (id, index) {
         indexRemover = index;
