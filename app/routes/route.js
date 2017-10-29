@@ -136,7 +136,7 @@ app.config(function ($httpProvider, $stateProvider, $urlRouterProvider) {
             url: '/pesagem/novo',
             templateUrl: 'app/pesagem/pesagem.html',
             parent: 'common',
-            controller: 'AnimalListar',
+            controller: 'PesoListar',
             controllerAs: 'vm'
         })
 

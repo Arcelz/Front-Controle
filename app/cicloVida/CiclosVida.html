@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-xs-10">
                 <h1>
-                    Hematócrito
+                    Ciclo de Vida
                 </h1>
             </div>
 
@@ -46,11 +46,12 @@
             <tr>
                 <th>Id</th>
                 <th>Nome</th>
-                <th>Codigo da Raça</th>
+                <th>Codigo da raça</th>
                 <th >Fazenda</th>
                 <th >Lote</th>
                 <th >Peso</th>
-                <th>Hematócrito</th>
+                <th>Fase da vida</th>
+                <th>Localização</th>
                 <th>Ação</th>
             </tr>
             </thead>
@@ -62,7 +63,30 @@
                 <td>{{animal.nomeFazenda}}</td>
                 <td>{{animal.codigoLote}}</td>
                 <td>{{animal.peso}}</td>
-                <td><input type="text"/></td>
+                <td>
+                    <div class="col-sm-14">
+
+                        <select class="form-control" id="enumFaseVida"
+                                name="enumFaseVida" ng-required="true" data-ng-model="form.enumFaseVida">
+                            <option></option>
+                            <option value="Bezerro">1</option>
+                            <option value="Novilho">2</option>
+                        </select>
+                    </div>
+                </td>
+                <td>
+                    <div class="col-sm-14">
+
+                        <select class="form-control" id="enumLocalizacao"
+                                name="enumLocalizacao" ng-required="true" data-ng-model="form.enumLocalizacao">
+                            <option></option>
+                            <option value="Bezerreira">1</option>
+                            <option value="Coletivo">2</option>
+                        </select>
+                    </div>
+
+
+                </td>
 
                 <td class="table-pesq-produto-col-acoes">
                     <div class="btn-group">

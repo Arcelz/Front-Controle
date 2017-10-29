@@ -59,9 +59,8 @@
                 <label for="fkPai">Nome do pai</label>
                 <select class="form-control" id="fkPai"
                         name="fkLote" ng-required="true" data-ng-model="form.fkPai">
-                    <option></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
+                    <option ng-repeat="pai in pais">    </option>
+
                 </select>
             </div>
             <div class="col-sm-2">

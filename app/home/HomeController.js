@@ -93,6 +93,58 @@ app.controller('Home', function ($scope, DataService) {
         options: {}
     });
 
+    //Ganho de peso por lote
+    var lote = ["lote 1", "lote 2", "lote 3"];
+    var valores = ["14", "17", "12"];
+
+
+    var ctx = document.getElementById('ganhoPesoPorLote').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
+
+        // The data for our dataset
+        data: {
+            labels: lote,
+            datasets: [{
+                label: "Ganho de peso por lote",
+                backgroundColor: 'rgba(30,148,210,0.5)',
+                borderColor: 'rgba(30,148,210,1)',
+                pointBackgroundColor: "#fff",
+                data: valores,
+            }]
+        },
+
+        // Configuration options go here
+        options: {}
+    });
+
+    //Ganho de peso por lote
+    var lote = ["lote 1", "lote 2", "lote 3"];
+    var valores = ["14", "17", "12"];
+
+
+    var ctx = document.getElementById('ganhoPesoSemanal').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: lote,
+            datasets: [{
+                label: "Ganho de peso semanal",
+                backgroundColor: 'rgba(30,148,210,0.5)',
+                borderColor: 'rgba(30,148,210,1)',
+                pointBackgroundColor: "#fff",
+                data: valores,
+            }]
+        },
+
+        // Configuration options go here
+        options: {}
+    });
+
     //GRAFICO DE VENDEDORES 
     // DataService.realizarGet('relatorios/16').then(function(data){
     //     console.log(data);
