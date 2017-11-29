@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aca698e-3281-40df-bc06-8346d70cf6c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/pesagem/PesoListar.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/pesagem/PesagemListar.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../API/.idea/API.iml" afterPath="$PROJECT_DIR$/../API/.idea/API.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../API/bd/Banco.php" afterPath="$PROJECT_DIR$/../API/bd/Banco.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/animal/Animal.html" afterPath="$PROJECT_DIR$/app/animal/Animal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cicloVida/CiclosVida.html" afterPath="$PROJECT_DIR$/app/cicloVida/CiclosVida.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fazenda/FazendaPesquisa.html" afterPath="$PROJECT_DIR$/app/fazenda/FazendaPesquisa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/home/HomeController.js" afterPath="$PROJECT_DIR$/app/home/HomeController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/home/home.html" afterPath="$PROJECT_DIR$/app/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/menu/menu.html" afterPath="$PROJECT_DIR$/app/menu/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pai/Pai.html" afterPath="$PROJECT_DIR$/app/pai/Pai.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pai/PaiEditar.js" afterPath="$PROJECT_DIR$/app/pai/PaiEditar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pesagem/PesagemNovo.js" afterPath="$PROJECT_DIR$/app/pesagem/PesagemNovo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes/route.js" afterPath="$PROJECT_DIR$/app/routes/route.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -368,14 +355,16 @@
       <workItem from="1507164921093" duration="4488000" />
       <workItem from="1507297430700" duration="267000" />
       <workItem from="1508887161472" duration="166000" />
+      <workItem from="1511991368525" duration="245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64777000" />
+    <option name="totallyTimeSpent" value="65022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="729" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23046875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
